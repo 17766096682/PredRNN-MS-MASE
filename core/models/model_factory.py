@@ -68,7 +68,7 @@ class Model(object):
                                ground_truth[:, 1:])
         loss_l2 = self.MSE_criterion(next_frames,
                                      ground_truth[:, 1:])
-        loss_gen = loss_l2
+        loss_gen = loss_l2 + loss_l1
         loss_gen.backward()
         self.optimizer.step()
 
