@@ -1,0 +1,5 @@
+PREDRNN
+MS多尺度版本
+6层多尺度
+
+lose为mse 和mae
